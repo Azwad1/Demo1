@@ -1,0 +1,43 @@
+class Notebook
+{
+private String name;
+private String class;
+private int roll_no;
+private String subject;
+private String teacher;
+private String college;
+private int phone_no;
+public void setName(String name){this.name=name;}
+public void setClass(String class){this.class=class;}
+public void setRoll_no(int roll_no){this.roll_no=roll_no;}
+public void setSubject(String subject){this.subject=subject;}
+public void setTeacher(String teacher){this.teacher=teacher;}
+public void setCollege(String college){this.college=college;}
+public void setPhone_no(int phone_no){this.phone_no=phone_no;}
+public String getName(){return name;}
+public String getClass(){return class;}
+public int getRoll_no(){return roll_no;}
+public String getTeacher(){return teacher;}
+public String getCollege(){return college;}
+public int getPhone_no(){return phone_no;}
+}
+class Notebook1
+{
+public static void main(String args[])
+{
+Notebook n = new Notebook();
+n.setName("Azwad");
+n.setClass("CSE");
+n.setRoll_no(1234);
+n.setSubject("JAVA");
+n.setTeacher("Prabhu");
+n.setCollege("Mother Theresa");
+n.setPhone_no(1234567890);
+System.out.println("Name :"+n.getName());
+System.out.println("Class :"+n.getClass()+" "+"Roll no:"+n.getRoll_no());
+System.out.println("Subject :"+n.getSubject()+" "+"Teacher :"+n.getTeacher());
+System.out.println("College :"+n.getCollege());
+System.out.println("Phone no:"+n.getPhone_no());
+}
+}
+
